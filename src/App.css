@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  border-left: 4px solid #00bcd4;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}

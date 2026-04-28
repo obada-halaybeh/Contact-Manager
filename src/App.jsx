@@ -10,10 +10,12 @@ function App() {
   const [contact, setcontact] = useState([]);
 
   function addContact(newContact) {
-    setcontact(...contact, newContact);
+    setcontact([...contact, newContact]);
   }
 
-  function deleteContact() {}
+  function deleteContact(targetIndex) {
+    setcontact(contact.filter((_, index) => index !== targetIndex));
+  }
 
   console.log(contact);
 
@@ -21,9 +23,7 @@ function App() {
     <>
       <h1> contact manager</h1>
       <ContactForm addContact={addContact} />
-      <List contact={contact} />
-
-      {/* <List deleteContact={deleteContact} /> */}
+      <List contact={contact} deleteContact={deleteContact} />
     </>
   );
 }

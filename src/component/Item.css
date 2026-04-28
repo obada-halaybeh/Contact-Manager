@@ -1,0 +1,10 @@
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./form.css";
 
 export default function ContactForm({ addContact }) {
   const [name, setName] = useState("");
@@ -12,6 +13,9 @@ export default function ContactForm({ addContact }) {
       email,
     };
     addContact(newContact);
+
+    setName("");
+    setEmail("");
   };
   return (
     <div>

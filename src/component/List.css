@@ -1,0 +1,15 @@
+.contacts-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.contacts-box h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
